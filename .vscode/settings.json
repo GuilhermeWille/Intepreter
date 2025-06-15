@@ -4,6 +4,7 @@
         "type_traits": "c",
         "stdint.h": "c",
         "stdlib.h": "c",
-        "chunk.h": "c"
+        "chunk.h": "c",
+        "debug.h": "c"
     }
 }

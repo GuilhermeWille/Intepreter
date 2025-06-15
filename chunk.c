@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "memory.h"
 
-void initiChunk(Chunk* chunk){
+void initChunk(Chunk* chunk){
     chunk -> count = 0;
     chunk -> capacity = 0;
     chunk -> code = NULL;
@@ -10,7 +10,7 @@ void initiChunk(Chunk* chunk){
 
 void freeChunk(Chunk* chunk){
     FREE_ARRAY(uint8_t, chunk -> code, chunk -> capacity);
-    initiChunk(chunk);
+    initChunk(chunk);
 }
 
 void writeChunk(Chunk* chunk, uint8_t byte){
